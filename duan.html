@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUONG THAI KHANG | Media Team</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), 
+                        url('https://lh3.googleusercontent.com/d/1XQFbL155piC48oEJ58STwppxRl1V8PnH') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 35px;
+            padding: 30px 20px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.6);
+            overflow: hidden;
+        }
+
+        /* Avatar & Title */
+        .avatar-main { width: 100px; height: 100px; border-radius: 50%; border: 3px solid rgba(255, 255, 255, 0.6); overflow: hidden; margin: 0 auto 15px; background: #222; }
+        .avatar-main img { width: 100%; height: 100%; object-fit: cover; }
+        h1 { font-family: 'Dancing Script', cursive; font-size: 28px; margin-bottom: 5px; }
+        .tagline { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #ff416c; margin-bottom: 20px; font-weight: 600; }
+
+        /* Links */
+        .links-container { display: flex; flex-direction: column; gap: 10px; }
+        .link-button { width: 100%; padding: 12px 20px; border-radius: 15px; text-decoration: none; color: white; font-size: 14px; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.1); display: flex; align-items: center; justify-content: space-between; transition: 0.3s; }
+        .link-button:hover { background: rgba(255, 255, 255, 0.15); transform: translateX(5px); }
+
+        /* Team Box */
+        .team-box { margin: 20px 0; padding: 15px 10px; background: rgba(255, 255, 255, 0.03); border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1); }
+        .team-members { display: flex; justify-content: center; gap: 25px; }
+        .member-link { text-decoration: none; color: inherit; text-align: center; font-size: 9px; }
+        .member-img { width: 55px; height: 55px; border-radius: 50%; border: 2px solid rgba(255, 255, 255, 0.2); overflow: hidden; margin-bottom: 5px; transition: 0.3s; }
+        .member-img img { width: 100%; height: 100%; object-fit: cover; }
+        .member-link:hover .member-img { transform: scale(1.1); border-color: #ff416c; }
+
+        /* Reviews Scroll */
+        .reviews-wrapper { margin-top: 20px; overflow: hidden; width: 100%; background: rgba(0, 0, 0, 0.2); padding: 10px 0; border-radius: 15px; }
+        .reviews-track { display: flex; width: max-content; animation: scroll 20s linear infinite; }
+        .review-card { width: 180px; flex-shrink: 0; margin: 0 10px; background: rgba(255, 255, 255, 0.05); padding: 10px; border-radius: 12px; font-size: 10px; text-align: left; border: 1px solid rgba(255, 255, 255, 0.1); }
+        .reviewer-name { font-weight: 600; color: #ff416c; display: block; margin-bottom: 2px; }
+        .review-card i { color: #f1c40f; font-size: 8px; }
+
+        @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+        /* Form Review */
+        .input-review-box { margin-top: 15px; padding: 15px; background: rgba(255, 255, 255, 0.05); border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1); }
+        .input-review-box input, .input-review-box textarea { width: 100%; background: rgba(255, 255, 255, 0.1); border: none; border-radius: 8px; padding: 8px 12px; color: white; font-size: 11px; margin-bottom: 8px; outline: none; }
+        .input-review-box button { width: 100%; background: #ff416c; color: white; border: none; padding: 8px; border-radius: 8px; font-size: 11px; font-weight: 600; cursor: pointer; transition: 0.3s; }
+        .input-review-box button:hover { background: #ff4b2b; transform: scale(1.02); }
+
+        .footer-text { margin-top: 15px; font-size: 8px; opacity: 0.3; }
+    </style>
+</head>
+<body>
+
+    <div class="glass-card">
+        <div class="avatar-main"><img src="https://lh3.googleusercontent.com/d/1AIwHf7OCFbvMfewAQWBZZHYDcKK3p6ya" alt="Khang"></div>
+        <h1>Luong Thai Khang</h1>
+        <p class="tagline">Photographer & Filmmaker</p>
+
+        <div class="links-container">
+            <a href="https://www.facebook.com/share/1CFaB4oGJV/" class="link-button" target="_blank"><span><i class="fab fa-facebook-f"></i> Facebook Cá Nhân</span><i class="fa-solid fa-chevron-right"></i></a>
+            <a href="https://www.facebook.com/share/1B5KvZaHS7/" class="link-button" target="_blank"><span><i class="fa-solid fa-camera-retro"></i> Fanpage Media</span><i class="fa-solid fa-chevron-right"></i></a>
+            <a href="https://zalo.me/0824767457" class="link-button" target="_blank"><span><i class="fa-solid fa-comment-dots"></i> Liên hệ Zalo</span><i class="fa-solid fa-chevron-right"></i></a>
+            <a href="https://www.tiktok.com/@luongthaikhang11" class="link-button" target="_blank"><span><i class="fab fa-tiktok"></i> TikTok</span><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+
+        <div class="team-box">
+            <div class="team-members">
+                <div class="member">
+                    <a href="https://www.facebook.com/share/1HL3AKHG1o/" class="member-link" target="_blank">
+                        <div class="member-img"><img src="https://lh3.googleusercontent.com/d/1KnpikGjLzxuOPypzm2HPJpLNiDqXzjOe"></div>
+                        <p>GIA KHANG</p>
+                    </a>
+                </div>
+                <div class="member">
+                    <a href="https://www.facebook.com/share/1BDTZ2132a/" class="member-link" target="_blank">
+                        <div class="member-img"><img src="https://lh3.googleusercontent.com/d/1rsXrxRZG6tYc9g3Tsuoq6-9XHuMfvWxG"></div>
+                        <p>ANH KHOI</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviews-wrapper">
+            <div class="reviews-track" id="reviewsTrack"></div>
+        </div>
+
+        <div class="input-review-box">
+            <input type="text" id="reviewerName" placeholder="Tên của bạn...">
+            <textarea id="reviewText" rows="2" placeholder="Cảm nhận của bạn về team..."></textarea>
+            <button onclick="addReview()">Gửi Đánh Giá</button>
+        </div>
+
+        <p class="footer-text">© 2026 KHANG MEDIA - PHAN THIET STORY</p>
+    </div>
+
+    <script>
+        const defaultReviews = [
+            { name: "Hoàng Nam", text: "Ảnh chụp rất có tâm, màu đẹp xuất sắc!" },
+            { name: "Minh Thư", text: "Team làm việc chuyên nghiệp, rất hài lòng." },
+            { name: "Quốc Anh", text: "Video dựng rất xịn xò, bắt trọn khoảnh khắc." }
+        ];
+
+        let realReviews = JSON.parse(localStorage.getItem('userReviews')) || [];
+
+        function displayReviews() {
+            const track = document.getElementById('reviewsTrack');
+            const allReviews = [...defaultReviews, ...realReviews];
+            const listToDisplay = [...allReviews, ...allReviews]; // Nhân đôi để trượt mượt
+            
+            track.innerHTML = listToDisplay.map(rev => `
+                <div class="review-card">
+                    <span class="reviewer-name">${rev.name}</span>
+                    <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"${rev.text}"</p>
+                </div>
+            `).join('');
+        }
+
+        function addReview() {
+            const nameInput = document.getElementById('reviewerName');
+            const textInput = document.getElementById('reviewText');
+
+            if (nameInput.value.trim() && textInput.value.trim()) {
+                const newReview = { name: nameInput.value, text: textInput.value };
+                realReviews.unshift(newReview);
+                localStorage.setItem('userReviews', JSON.stringify(realReviews));
+
+                nameInput.value = '';
+                textInput.value = '';
+                displayReviews();
+                alert("Cảm ơn bạn đã đánh giá!");
+            } else {
+                alert("Vui lòng nhập đầy đủ tên và nội dung.");
+            }
+        }
+
+        displayReviews();
+    </script>
+</body>
+</html>
